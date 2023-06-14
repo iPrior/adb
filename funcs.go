@@ -130,3 +130,14 @@ func InitArangoDbEnsureTTLIndex(ctx context.Context, col driver.Collection, opt 
 	}
 	return
 }
+
+func StructToMap(structPtr any) (map[string]any, error) {
+	raw, err := json.Marshal(structPtr)
+	if err != nil {
+		return nil, err
+	}
+
+	var data map[string]any
+	err = json.Unmarshal(raw, &data)
+	return data, err
+}
