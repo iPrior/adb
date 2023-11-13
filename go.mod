@@ -3,7 +3,7 @@ module github.com/iPrior/adb
 go 1.19
 
 require (
-	github.com/arangodb/go-driver v1.4.1
+	github.com/arangodb/go-driver v1.6.1
 	github.com/pkg/errors v0.9.1
 )
 

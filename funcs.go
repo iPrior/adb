@@ -2,12 +2,12 @@ package adb
 
 import (
 	"context"
+	"encoding/json"
 	"fmt"
 	"github.com/arangodb/go-driver"
 	"github.com/arangodb/go-driver/http"
 	"github.com/pkg/errors"
 	"time"
-	"encoding/json"
 )
 
 // InitArangoDB инициализирует подключение к БД
